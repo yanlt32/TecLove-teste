@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecLove</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/40e1b7901b.js" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body id="body" class="smooth-scroll-wrapper">
+
+    <header class="header" id="home">
+        <div class="blush um"></div>
+        <div class="blush dois"></div>
+
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+                    <img class="logo" src="./assets/logo1-unscreen.gif" alt="Logo">
+                    <h1><span>Transforme</span> seu relacionamento com um site exclusivo para casais!</h1>
+                    <p>Com o Devcasais, você pode criar memórias, acompanhar datas importantes e compartilhar
+                        momentos únicos com seu parceiro:</p>
+                    <a target="_blank" href="https://wa.link/7ku599"><button class="desktop"
+                            onclick="console.log('Botão clicado'); fbq('track', 'Lead')">Garanta um site exclusivo
+                            para o seu parceiro e aproveite benefícios únicos!</button></a>
+                </div>
+
+                <div class="image">
+                    <video controls preload="auto" poster="./assets/Captura de tela 2025-01-18 163702.png" width="600">
+                        <source src="./assets/videocasal.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+
+                    <a target="_blank" href="https://wa.link/7ku599"><button class="mobile"
+                            onclick="console.log('Botão clicado'); fbq('track', 'Lead')">Garanta um site exclusivo
+                            para o seu parceiro!</button></a>
+                </div>
+            </div>
+        </div>
+
+        <img class="bg desktop" src="./assets/coraçao.png" alt="">
+    </header>
+
+    <section id="beneficios">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <h2>Confira os benefícios:</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/melhor.png" alt="">
+                        <h3>Contador de dias:</h3>
+                        <p>Acompanhamento de contagem de dias.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/apresenta.png" alt="">
+                        <h3>Galeria de fotos:</h3>
+                        <p>Armazenamento e visualização de fotos em uma galeria exclusiva.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/tem.png" alt="">
+                        <h3>Carta do mês:</h3>
+                        <p>Recebimento de uma carta personalizada todo mês, com conteúdos exclusivos.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/prazo.png" alt="">
+                        <h3>Vitalício:</h3>
+                        <p>Acesso vitalício aos benefícios do plano, sem necessidade de renovação.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/perfil.png" alt="">
+                        <h3>Histórico de cartas:</h3>
+                        <p>Acesso ao registro e histórico completo das cartas enviadas.</p>
+                    </div>
+                </div>
+
+                <a target="_blank" href="https://wa.link/7ku599"><button
+                        onclick="console.log('Botão clicado'); fbq('track', 'Lead')">Garanta um site exclusivo para o
+                        seu parceiro e aproveite benefícios únicos!</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos">
+        <div class="planos-container">
+            <header>
+                <h2>Escolha o seu plano e experimente a versão demo</h2>
+            </header>
+    
+            <!-- Seção de planos -->
+            <div class="planos-cards">
+                <div class="plano">
+                    <h3>Plano Básico</h3>
+                    <p><strong>Preço:</strong> R$99,90</p>
+                    <p>Acesse funções básicas do site, com contador de dias e histórico de cartas.</p>
+                    <button class="demo-btn" onclick="openDemo('video-basico')">Ver Vídeo</button>
+                </div>
+    
+                <div class="plano">
+                    <h3>Plano Intermediário</h3>
+                    <p><strong>Preço:</strong> R$199,90</p>
+                    <p>Inclui todos os benefícios do Plano Básico, mais a galeria de fotos e cartas do mês.</p>
+                    <button class="demo-btn" onclick="openDemo('video-intermediario')">Ver Vídeo</button>
+                </div>
+    
+                <div class="plano">
+                    <h3>Plano Completo</h3>
+                    <p><strong>Preço:</strong> R$299,90</p>
+                    <p>Todos os benefícios exclusivos, incluindo tudo do Plano Intermediário mais acesso vitalício.</p>
+                    <button class="demo-btn" onclick="openDemo('video-completo')">Ver Vídeo</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modais de Vídeo -->
+        <div id="video-basico" class="demo-modal">
+            <div class="modal-content">
+                <h2>Vídeo - Plano Básico</h2>
+                <video controls>
+                    <source src="./assets/video-plano-basico.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <button onclick="closeDemo('video-basico')">Fechar</button>
+            </div>
+        </div>
+    
+        <div id="video-intermediario" class="demo-modal">
+            <div class="modal-content">
+                <h2>Vídeo - Plano Intermediário</h2>
+                <video controls>
+                    <source src="./assets/video-plano-intermediario.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <button onclick="closeDemo('video-intermediario')">Fechar</button>
+            </div>
+        </div>
+    
+        <div id="video-completo" class="demo-modal">
+            <div class="modal-content">
+                <h2>Vídeo - Plano Completo</h2>
+                <video controls>
+                    <source src="./assets/videocasal.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <button onclick="closeDemo('video-completo')">Fechar</button>
+            </div>
+        </div>
+    </section>
+    <section id="sobre-nos" class="sobre-nos">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <h2>Sobre a DevCasais</h2>
+                    <p>Transformando relacionamentos em memórias inesquecíveis</p>
+                </header>
+    
+                <div class="about-description">
+                    <div class="about-text">
+                        <h3>Nossa Missão</h3>
+                        <p>Na DevCasais, nossa missão é proporcionar aos casais uma maneira única e especial de celebrar o amor. Através de plataformas exclusivas, criamos ferramentas para que casais possam compartilhar memórias, acompanhar datas importantes e fortalecer ainda mais seus laços.</p>
+    
+                        <h3>Nosso Propósito</h3>
+                        <p>Acreditamos que cada relacionamento tem uma história única. Por isso, buscamos criar soluções personalizadas para que cada casal tenha um espaço digital onde possa registrar suas vivências, emoções e momentos especiais.</p>
+    
+                        <h3>Visão de Futuro</h3>
+                        <p>Queremos ser referência no mercado de tecnologia para casais, oferecendo soluções inovadoras e sempre alinhadas às necessidades dos nossos usuários. Nosso compromisso é sempre buscar novas formas de encantar e criar experiências únicas para casais em todo o mundo.</p>
+    
+                        <h3>Somos novos no mercado de trabalho!</h3>
+                        <p>Apesar de estarmos começando agora, nossa paixão por tecnologia e pelo fortalecimento dos relacionamentos nos move a criar soluções de qualidade e que realmente atendam às necessidades dos nossos clientes.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="./assets/logo1-unscreen.gif" alt="Imagem da DevCasais" />
+                    </div>
+                </div>
+    
+                <div class="values">
+                    <h3>Nossos Valores</h3>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Empatia</h4>
+                            <p>Entendemos as necessidades e desejos de nossos usuários, criando soluções que atendem ao seu coração.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-cogs"></i>
+                            <h4>Inovação</h4>
+                            <p>Estamos sempre em busca de novas ideias e tecnologias para tornar os relacionamentos ainda mais especiais.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <h4>Conexão</h4>
+                            <p>Fazemos com que os casais se sintam ainda mais conectados e próximos, com ferramentas práticas e emocionantes.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="social-media">
+                    <h3>Nos acompanhe nas redes sociais:</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/yanlt32" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1200,
+            }
+        );
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

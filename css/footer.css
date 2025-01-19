@@ -1,0 +1,165 @@
+footer {
+    background: var(--bg-black);
+    overflow: hidden;
+    position: relative;
+
+    padding-block: 8rem;
+}
+
+footer::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(to right, #FF6F91 0%, #FF9A8B 50%, #FF6F91 100%); /* Gradiente romântico */
+}
+
+footer .logo {
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+
+footer .content {
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: start;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer .content h3 {
+    font-size: 2rem;
+    background: var(--gradient);  /* Aplicar o gradiente no texto */
+    font-family: "Space Grotesk", sans-serif;
+    -webkit-background-clip: text;  /* Aplica o gradiente apenas no texto */
+    -webkit-text-fill-color: transparent;  /* Torna o texto transparente para mostrar o gradiente */
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: transparent;  /* Garantir que o texto seja transparente */
+    border-bottom: 2px solid transparent;  /* Borda transparente para evitar cor amarela */
+    background-clip: padding-box;  /* Garantir que o fundo não se propague para fora do texto */
+}
+
+
+
+footer .content p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #d2d2d2;
+}
+
+footer .content p a {
+    color: #d2d2d2;
+    text-decoration: none;
+}
+
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer div.redes-sociais .icons {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer div.redes-sociais a {
+    text-decoration: none;
+}
+
+footer .redes-sociais ion-icon {
+    color: #d2d2d2;
+    font-size: 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+footer .redes-sociais ion-icon:hover {
+    color: var(--love-color); /* Cor do ícone ao passar o mouse */
+    background-color: #FF6F91; /* Cor de fundo suave */
+    border-radius: 50%;
+    padding: 0.5rem;
+    transform: scale(1.2); /* Aumenta o ícone de redes sociais ao passar o mouse */
+}
+
+/* Ajustes responsivos para telas menores */
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+}     
+
+@media (min-width: 1080px) {
+    .wrapper {
+        width: min(112rem, 100%);
+    }
+
+    footer#footer .wrapper .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-content: center;
+        justify-items: center;
+        gap: 15rem;
+    }
+
+    footer#footer .wrapper div {
+        gap: 1rem;
+    }
+
+    footer#footer .wrapper div.redes-sociais {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: end;
+    }
+
+    footer#footer a {
+        transition: all 200ms ease-in-out;
+    }
+
+    footer#footer a:hover {
+        color: #fff;
+        cursor: url("../assets/CURSOR\ LSB.svg"), auto;
+        transform: scale(1.1);
+    }
+
+    footer#footer .redes-sociais ion-icon {
+        font-size: 3rem;
+        transition: all 200ms ease-in-out;
+
+        padding: 1rem;
+    }
+
+    footer#footer div.redes-sociais .icons {
+        gap: 0;
+    }
+
+    footer#footer .redes-sociais ion-icon:hover {
+        background-color: #ff590029;
+        border-radius: 50%;
+        line-height: 0;
+    }
+}  
+
+@media (min-width: 1400px) {
+    .wrapper {
+        width: min(140rem, 100%);
+    }
+}
+
+@media (min-width: 1700px) {
+    .wrapper {
+        width: min(150rem, 100%);
+    }
+}
