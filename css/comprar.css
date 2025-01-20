@@ -1,0 +1,213 @@
+/* Resetando algumas propriedades padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4f4; /* Cor suave de fundo */
+    color: #333;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #e74c3c; /* Tom de vermelho romântico */
+}
+
+/* Estilo dos cartões de planos */
+#selecao-plano .planos-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#selecao-plano .plano {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease;
+    border: 1px solid #e74c3c; /* Cor de borda romântica */
+}
+
+#selecao-plano .plano:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(231, 76, 60, 0.2); /* Efeito de hover com sombra suave */
+}
+
+#selecao-plano .plano h3 {
+    font-size: 1.8rem;
+    color: #e74c3c; /* Cor de título com tom de vermelho */
+    margin-bottom: 15px;
+}
+
+#selecao-plano .plano p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#selecao-plano .plano ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#selecao-plano .plano ul li {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+#selecao-plano .selecionar-plano {
+    background-color: #e74c3c; /* Botão vermelho romântico */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#selecao-plano .selecionar-plano:hover {
+    background-color: #c0392b; /* Tom mais escuro de vermelho no hover */
+}
+
+/* Seção de personalização */
+#personalizacao {
+    display: none;
+}
+
+#personalizacao form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #e74c3c; /* Borda com tom romântico */
+}
+
+#personalizacao label {
+    font-size: 1rem;
+    color: #e74c3c; /* Cor do texto do rótulo em vermelho */
+}
+
+#personalizacao input[type="text"],
+#personalizacao input[type="date"],
+#personalizacao input[type="file"] {
+    padding: 10px;
+    border: 1px solid #e74c3c; /* Borda vermelha suave nos campos de entrada */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#personalizacao input[type="text"]:focus,
+#personalizacao input[type="date"]:focus,
+#personalizacao input[type="file"]:focus {
+    border-color: #c0392b; /* Alterando para borda mais escura ao focar */
+}
+
+#personalizacao .btn-enviar {
+    background-color: #e74c3c; /* Botão vermelho romântico */
+    color: white;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#personalizacao .btn-enviar:hover {
+    background-color: #c0392b; /* Tom mais escuro no hover */
+}
+
+/* Seção de confirmação */
+#confirmacao {
+    display: none;
+}
+
+#confirmacao #detalhes-compra {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #e74c3c; /* Borda de confirmação romântica */
+}
+
+#confirmacao #detalhes-compra h2 {
+    font-size: 2rem;
+    color: #e74c3c; /* Título em tom de vermelho romântico */
+    margin-bottom: 20px;
+}
+
+#confirmacao #detalhes-compra p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#confirmacao .btn-enviar {
+    background-color: #e74c3c; /* Botão vermelho romântico */
+    color: white;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmacao .btn-enviar:hover {
+    background-color: #c0392b; /* Tom mais escuro no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #selecao-plano .planos-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #selecao-plano .plano {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #personalizacao form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    #selecao-plano .plano h3 {
+        font-size: 1.5rem;
+    }
+
+    #selecao-plano .plano p,
+    #selecao-plano .plano ul li {
+        font-size: 0.9rem;
+    }
+}

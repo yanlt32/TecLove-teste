@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra e Montagem do Site - DevCasais</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/comprar.css">
+    <script src="https://kit.fontawesome.com/40e1b7901b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="selecao-plano">
+        <div class="wrapper">
+            <h2>Escolha o seu plano</h2>
+    
+            <div class="planos-cards">
+                <!-- Plano Básico -->
+                <div class="plano">
+                    <h3>Plano Básico</h3>
+                    <p><strong>Preço:</strong> R$99,90</p>
+                    <p>Inclui contador de dias, histórico de cartas e até 5 fotos.</p>
+                    <ul>
+                        <li>Contador de dias</li>
+                        <li>Histórico de cartas</li>
+                        <li>5 Fotos</li>
+                    </ul>
+                    <button class="selecionar-plano" onclick="selecionarPlano('planoBasico')">Selecionar</button>
+                </div>
+    
+                <!-- Plano Personalizado -->
+                <div class="plano">
+                    <h3>Plano Personalizado</h3>
+                    <p><strong>Preço:</strong> R$199,90</p>
+                    <p>Inclui todos os benefícios do Plano Básico, mais a galeria de fotos e até 10 fotos.</p>
+                    <ul>
+                        <li>Contador de dias</li>
+                        <li>Histórico de cartas</li>
+                        <li>Galeria de fotos</li>
+                        <li>10 Fotos</li>
+                    </ul>
+                    <button class="selecionar-plano" onclick="selecionarPlano('planoPersonalizado')">Selecionar</button>
+                </div>
+    
+                <!-- Plano Premium -->
+                <div class="plano">
+                    <h3>Plano Premium</h3>
+                    <p><strong>Preço:</strong> R$299,90</p>
+                    <p>Todos os benefícios do Plano Personalizado, mais acesso vitalício e até 15 fotos.</p>
+                    <ul>
+                        <li>Contador de dias</li>
+                        <li>Histórico de cartas</li>
+                        <li>Galeria de fotos</li>
+                        <li>10 Fotos</li>
+                        <li>Acesso Vitalício</li>
+                        <li>15 Fotos</li>
+                    </ul>
+                    <button class="selecionar-plano" onclick="selecionarPlano('planoPremium')">Selecionar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Personalização (Inicialmente escondida) -->
+    <section id="personalizacao" style="display:none;">
+        <div class="wrapper">
+            <h2>Personalize seu site</h2>
+            <form id="form-personalizacao">
+                <label for="nome-casal">Nome do Casal:</label>
+                <input type="text" id="nome-casal" name="nome-casal" required>
+                
+                <label for="data-aniversario">Data de Aniversário:</label>
+                <input type="date" id="data-aniversario" name="data-aniversario" required>
+    
+                <label for="adicionar-fotos">Adicionar Fotos (até <span id="max-fotos">5</span>):</label>
+                <input type="file" id="adicionar-fotos" name="adicionar-fotos" accept="image/*" multiple>
+    
+                <button type="submit" class="btn-enviar">Enviar Pedido</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Seção de Confirmação -->
+    <section id="confirmacao" style="display:none;">
+        <div class="wrapper">
+            <div id="detalhes-compra">
+                <h2>Resumo da sua compra</h2>
+                <p id="plano-selecionado">Plano selecionado: <strong></strong></p>
+                <p id="fotos-adicionais">Fotos adicionais: <strong>0</strong></p>
+                <button onclick="finalizarCompra()" class="btn-enviar">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+    <!-- Seção de Confirmação -->
+<section id="confirmacao" style="display:none;">
+    <div class="wrapper">
+        <div id="detalhes-compra">
+            <h2>Resumo da sua compra</h2>
+            <p id="plano-selecionado">Plano selecionado: <strong></strong></p>
+            <p id="fotos-adicionais">Fotos adicionais: <strong>0</strong></p>
+
+            <!-- Formulário para coletar e-mail -->
+            <form id="form-email">
+                <label for="email">Informe seu e-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                <button type="submit" class="btn-enviar">Finalizar Compra</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Link do JS -->
+    <script src="./comprar.js"></script>
+</body>
+
+</html>
